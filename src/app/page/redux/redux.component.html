@@ -1,0 +1,35 @@
+<app-navigation></app-navigation>
+<div class="p-10 mx-auto w-[600px]">
+  <h1 class="my-5 text-3xl text-center">REDUX COUNTER</h1>
+  <h1 class="my-5 text-2xl text-center">Current Count: {{ count$ | async }}</h1>
+
+  <div class="flex">
+    <div class="flex-1 p-2">
+      <button
+        type="button"
+        class="relative flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-green-600 border border-transparent rounded-md group hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        (click)="increment()"
+      >
+        Increment
+      </button>
+    </div>
+    <div class="flex-1 p-2">
+      <button
+        type="button"
+        class="relative flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md group hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        (click)="decrement()"
+      >
+        Decrement
+      </button>
+    </div>
+    <div class="flex-1 p-2">
+      <button
+        type="button"
+        class="relative flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-red-600 border border-transparent rounded-md group hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        (click)="reset()"
+      >
+        Reset Counter
+      </button>
+    </div>
+  </div>
+</div>
